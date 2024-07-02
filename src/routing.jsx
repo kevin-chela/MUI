@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Dashboard from './components/dashboard/index'
+import Dashboard from './components/dashboard/dashboard'
 
 import StoreOutlinedIcon from '@mui/icons-material/StoreOutlined';
 
