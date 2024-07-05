@@ -1,12 +1,11 @@
 import React from 'react';
 import { Grid, Box, Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import Navbar from '../../components/navbar/navbar';
+import HeroSection from '../../pages/heroSection';
 
 const DashboardContainer = styled(Box)(({ theme }) => ({
   minHeight: '100vh',
   backgroundColor: theme.palette.background.default,
-  padding: theme.spacing(2),
 }));
 
 const ContentContainer = styled(Container)(({ theme }) => ({
@@ -19,7 +18,7 @@ const ContentContainer = styled(Container)(({ theme }) => ({
 const DashboardLayout = ({ children }) => {
   return (
     <DashboardContainer>
-      <Navbar />
+      <HeroSection />
       <ContentContainer>
         <Grid container spacing={3}>
           {children}

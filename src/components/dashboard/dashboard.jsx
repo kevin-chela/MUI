@@ -1,14 +1,20 @@
 import React from 'react';
 
-import { Box, Grid } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 
 import DashboardLayout from '../../layout/dashboardLayout/dashboardLayout';
+import tabPage from '../tab/tab';
 
 const Dashboard = () => {
   return (
     <DashboardLayout>
       <Grid item xs={12}>
-      <Box>Component 0</Box>
+      <Box>
+        <tabPage />
+      <Typography sx={{ color: '#000000' }}>
+        Tab section
+      </Typography>
+      </Box>
       <h5>hello</h5>
       </Grid>
       <Grid item xs={12} md={6}>
